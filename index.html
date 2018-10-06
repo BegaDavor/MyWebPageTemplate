@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>My Template</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="style/main.css" />
+    <script src="script/main.js"></script>
+    
+</head>
+<body>
+
+    <div class="header" id="header">
+        <div class="logo">
+            <h1 id="logoname">LOGO</h1>
+        </div>
+        <div class="navigation">
+            <nav>
+                <ul>
+                    <li><a href="#top">HOME</a></li>
+                    <li><a href="#ABOUT">ABOUT</a></li>
+                    <li><a href="#PICTURE">PICTURE</a></li>
+                    <li><a href="#CONTACT">CONTACT</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <div class="wrapper">
+            <div class="typewriter">
+                <h1>Welcome to my page!</h1>
+            </div>
+    </div>
+    <div id="ABOUT">
+
+        <h1>About me...</h1>
+        <p class="aboutme">
+                Lorem ipsum dolor sit amet, vel porro moderatius te, vim veritus vituperata an, cu nemore putant utamur sea. Nam ut quot nonumes deseruisse, ius diam vitae ad. Ius ex utroque lobortis antiopam. Sed noster blandit deleniti ea, nam dolorem corrumpit et.
+                Ea persius erroribus disputationi quo, est an graecis antiopam. Id eam esse tibique, legendos persecuti pro et. In sed dicat consul, vitae aliquip nostrum te nam, cu dico ludus usu. Id quaeque cotidieque eum, prima dicit viris mea te, vel ei definiebas quaerendum.
+                Per eu alia philosophia. Cu eruditi legimus laboramus ius. Ius aliquando maiestatis cu, ei vel odio expetendis dissentiet, ad per voluptua maluisset. Sit feugait convenire disputando te.
+                Clita dictas pro et, vocent singulis delicatissimi nec ea. Eum perpetua scriptorem et, in cum tota iudico partiendo. Partem mediocrem gubergren eos et. Quot inani veniam pri et, duo epicurei ocurreret maluisset et. Ei meis laoreet duo, cu mei erat falli dicant. Eu usu atqui etiam minim, dicit placerat similique an nec.
+                Platonem efficiantur no eum, quo ad magna tacimates. Modo prodesset mea at, dicunt tritani probatus at eos. Suavitate philosophia vel eu, dolor nostrum torquatos at vim, in sea elit aperiam. Amet diam ornatus te eos, ut sit impedit omittam.
+        </p>
+
+    </div>
+
+    <div id="PICTURE">
+        <h1>Pictures...</h1>
+        <section>
+                <img class="mySlides" src="images/aboutme.jpg" style="width:60%">
+                <img class="mySlides" src="images/comp.jpg" style="width:60%">
+                <img class="mySlides" src="images/contactme.jpg" style="width:60%">
+        </section>
+        <script>
+                // Automatic Slideshow - change image every 3 seconds
+                var myIndex = 0;
+                carousel();
+                
+                function carousel() {
+                    var i;
+                    var x = document.getElementsByClassName("mySlides");
+                    for (i = 0; i < x.length; i++) {
+                       x[i].style.display = "none";
+                    }
+                    myIndex++;
+                    if (myIndex > x.length) {myIndex = 1}
+                    x[myIndex-1].style.display = "block";
+                    setTimeout(carousel, 3000);
+                }
+                </script>
+    </div>
+    
+    <div id="CONTACT">
+           
+            <div class="container">
+                <h1>Contact...</h1>
+                <div style="text-align:center">
+                </div>
+                <div class="row">
+                        <div class="column">
+                                <form action="/action_page.php">
+                                  <label for="fname">First Name</label>
+                                  <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                                  <label for="lname">Last Name</label>
+                                  <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                                  <label for="country">Country</label>
+                                  <select id="country" name="country">
+                                    <option value="bosnia">Bosnia and Herzegovina</option>
+                                    <option value="croatia">Croatia</option>
+                                    <option value="serbia">Serbia</option>
+                                    <option value="other">Other</option>
+                                  </select>
+                                  <label for="subject">Subject</label>
+                                  <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+                                  <input type="submit" value="Submit">
+                                </form>
+                              </div>
+                  <div class="column_right">
+                    <h2>Adress:</h2>
+                    <address>Example bb, 00000 City, Country</address>
+                    <h2>E-mail:</h2>
+                    <address>username@example.com</address>
+                    <h2>Phone:</h2>
+                    <address>(000) 000 - 000</address>
+                  </div>
+                  <div class="column_right_down">
+                        <h2>Social networks:</h2>
+                        <ul class="social-icons">
+                                <li><a href="#"><img src='images/Facebook.svg' /></a></li>
+                                <li><a href="#"><img src='images/Google+.svg' /></a></li>
+                                <li><a href="#"><img src='images/Instagram.svg' /></a></li>
+                                <li><a href="#"><img src='images/Linkedin.svg' /></a></li>
+                                <li><a href="#"><img src='images/Pinterest.svg' /></a></li>
+                                <li><a href="#"><img src='images/Twitter.svg' /></a></li>
+                                <li><a href="#"><img src='images/YouTube.svg' /></a></li>
+                        </ul>
+                        
+                      </div>
+                 
+                </div>
+              </div>
+
+    </div>
+
+    <div class="footer">
+        <p>&copy; Created by Davor Beganovic</p>
+    </div>
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top">&#8679;</button>
+</body>
+</html>

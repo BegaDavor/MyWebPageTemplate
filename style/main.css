@@ -1,0 +1,308 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    width: 100%;
+    margin: 0;
+    font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 90%;
+	margin: 0px;
+    text-align: center;
+    background-color: gray;
+}
+
+.header{
+    background: rgba(0, 0, 0, 0.692);
+    width: 100%;
+    margin: 0;
+    top: 0;
+    padding: 2px 2px;
+    position: fixed;
+    text-align: center;
+    border-bottom: black solid 2px;
+    transition: 0.2s;
+}
+.logo{
+    float: left;
+    margin-left: 15px;
+    color: aliceblue;
+
+}
+.navigation{
+    float: right;
+    margin-top: 10px;
+    margin-right: 20px;
+}
+
+.navigation ul {
+    text-align: justify;
+    list-style: none;
+}
+
+.navigation ul li{
+    display: inline;
+    padding-right: 8px;
+}
+.navigation a{
+    color: aliceblue;
+    font-style: bold;
+    text-decoration: none;
+}
+
+.navigation a:hover {
+    color: rgba(240, 248, 255, 0.637);
+    border-bottom: aliceblue solid 3px;
+    padding-bottom: 2%;
+}
+
+div.wrapper{
+    width: 100%;
+    height: 100%;
+	margin: 0px;
+	background-image: url("../images/comp.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    padding-top: 20%;
+    padding-bottom: 20%;
+    border-bottom: 3px solid black;
+}
+
+
+
+#ABOUT h1{
+    margin-bottom: 5%;
+    margin-top: 0%;
+    color: aliceblue;
+    text-shadow: black 1px 1px 2px;
+}
+
+#ABOUT{
+    background: url(../images/aboutme.jpg);
+    background-size: cover;
+    border-bottom: black solid 3px;
+    text-align: center;
+    margin: 0;
+    padding-top: 7.5%;
+    padding-bottom: 7.5%;
+    width: 100%;
+}
+
+p.aboutme{
+    border: black solid 4px;
+    background-color: rgba(0, 0, 0, 0.562);
+    color: aliceblue; 
+    border-radius: 15%;
+    text-align: justify;
+    font-size: 100%;
+    width: 60%;
+    height: 50%;
+    line-height: 1.50em;
+    padding: 5% 8%;
+    margin-left: 10%;
+    margin-right: 10%;
+    column-count: 2;
+    column-gap: 40px;
+    column-rule-style: inset;
+    column-rule-color: aliceblue;
+    text-shadow: black 1px 1px 2px;
+}
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 2%;
+    border: 1px solid rgb(0, 0, 0);
+    margin-top: 6px;
+    margin-bottom: 16px;
+    margin-right: 4%;
+    resize: all;
+}
+
+input[type=submit] {
+    background-color: rgb(255, 255, 255);
+    color:black;
+    padding: 16px 31px;
+    border: black solid 2px;
+    cursor: pointer;
+    border-radius: 28px;
+    display: inline-block;
+    text-decoration: none;
+    font-style: bold;
+}
+
+input[type=submit]:hover {
+    background-color: #000200b0;
+    color: aliceblue;
+}
+
+input[type=submit]:active{
+    top: 1px;
+}
+/* Style the container/contact section */
+.container {
+    border-bottom: solid black 3px;
+    background: url(../images/contactme.jpg);
+    background-size: cover;
+    padding: 10px;
+}
+
+/* Create two columns that float next to eachother */
+.column {
+    float: left;
+    width: 40%;
+    padding: 2%;
+    border: black solid 4px;
+    background-color: rgba(0, 0, 0, 0.74);
+    border-radius: 5%;
+    color: aliceblue; 
+    margin: 0;
+    margin-top: 3%;
+}
+
+.column_right{
+    float: right;
+    border: black solid 4px;
+    background-color: rgba(0, 0, 0, 0.74);
+    border-radius: 5%;
+    color: aliceblue; 
+    width: 40%;
+    padding: 2%;
+    border: black solid 4px;
+    background-color: rgba(0, 0, 0, 0.74);
+    border-radius: 5%;
+    color: aliceblue; 
+    margin: 2%;
+    margin-top: 3%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+form{
+    padding: 3%;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .column, input[type=submit] {
+        width: 95%;
+        margin-top: 0;
+    }
+}
+
+form input {
+    border-radius: 2%;
+}
+#PICTURE{
+    background-color: aliceblue;
+    border-bottom: black solid 3px;
+    margin: 0;
+    padding: 2%;
+    text-align: center;
+}
+.mySlides{
+    border: rgba(0, 0, 0, 0.836) solid 2px;
+    float: initial;
+    padding: 2%;
+    margin-left: 18%;
+} 
+
+.footer{
+    background-color: black;
+    color: white;
+    padding: 2%;
+}
+
+.social-icons {
+    text-align: center;
+    }  
+  .social-icons li {
+    display:inline-block;
+    list-style-type:none;
+    -webkit-user-select:none;
+    -moz-user-select:none;
+    }
+  .social-icons li a {
+    border-bottom: none;
+    }
+  .social-icons li img {
+    width: 30px;
+    height:30px;
+    margin-right: 20px;
+  }
+
+  .social-icons li img:hover{
+    opacity: 0.7;
+    
+  } 
+  
+  .column_right_down{
+    float: right;
+    border: black solid 4px;
+    background-color: rgba(0, 0, 0, 0.74);
+    border-radius: 5%;
+    color: aliceblue; 
+    width: 40%;
+    padding: 2%;
+    border: black solid 4px;
+    background-color: rgba(0, 0, 0, 0.74);
+    border-radius: 5%;
+    color: aliceblue; 
+    margin: 2%;
+    margin-top: 3%;
+    float: bottom;
+
+  }
+
+  .typewriter h1 {
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .50em solid orange; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+      typing 3.5s steps(40, end),
+      blink-caret .75s step-end infinite;
+      background-color: rgba(0, 0, 0, 0.616);
+      color: aliceblue;
+  }
+  
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 40% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange; }
+  }
+
+  #myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: rgb(0, 0, 0); /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 0.5% 0.8%; /* Some padding */
+    border-radius: 50%; /* Rounded corners */
+    font-size: 25px; /* Increase font size */
+    box-shadow: 0px 2px 16px 0px rgba(0,0,0,1);
+}
+
+#myBtn:hover {
+    background-color: #555; /* Add a dark-grey background on hover */
+}
+
+  
